@@ -10,7 +10,7 @@ datasource db {
 
 model Note{
   id  String @id @default(uuid())
-  title String
+  title String?
   content String
 
   createdAt DateTime @default(now())
